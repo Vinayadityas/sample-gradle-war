@@ -9,7 +9,7 @@ pipeline {
         stage('Check Gradle Version') {
             steps {
                 sh 'gradle --version'
-                echo "added small change new"
+                echo "added small change old"
             }
         }
         stage('Build Gradle') {
