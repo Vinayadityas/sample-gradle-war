@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Copy to dev server'){
             steps{
-                echo 'copy file to dev server'
+                echo 'copy file to remote server'
                 sshagent(['remote-server']){
                     sh 'scp build/libs/pipeline_job.jar remote@192.168.50.34:/home/remote/'
                 }
